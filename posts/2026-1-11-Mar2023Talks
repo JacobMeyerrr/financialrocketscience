@@ -1,0 +1,73 @@
+!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome: What this site is · Financial Rocket Science</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div>
+          <h1><a href="../index.html" style="text-decoration:none;">Financial Rocket Science</a></h1>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../personal-development.html">Personal Development</a>
+        <a href="../grad-school.html">Grad School</a>
+        <a href="../career.html">Career</a>
+        <a href="../marathons.html">Marathons</a>
+        <a href="../business.html">Personal Finance</a>
+        <a href="../comedy.html">Comedy</a>
+        <a href="../comedy.html">Books</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap article">
+    <h1>Alan Chikin Chow and Cosetts USC Social Media Talks</h1>
+    <p class="meta">Jan 11, 2026 · Category: Social Media</p>
+
+    <p>
+      
+    </p>
+
+    <p>
+      
+    </p>
+
+    <p>
+
+    </p>
+
+    <p>
+
+    </p>
+
+    <p>
+      
+    </p>
+
+    <p>
+
+    </p>
+
+    <p>
+
+    </p>
+
+
+    <p><a href="../index.html">← Back to Home</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="y"></span> Financial Rocket Science</div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
