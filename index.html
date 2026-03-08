@@ -24,6 +24,15 @@
         <a href="index.html">Books</a>
       </nav>
     </div>
+    <div class="search-bar-wrap">
+      <div class="wrap">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search-input" placeholder="Search posts…" autocomplete="off" />
+          <button class="search-clear" id="search-clear" aria-label="Clear search">✕</button>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -49,7 +58,7 @@
 
         <a class="card" href="posts/2025-12-20-comedy.html">
           <div class="card-thumb">
-            <div class="card-thumb-placeholder">🎤</div>
+            <img src="posts/IMG_4584.png" alt="Standup Comedy class group photo" loading="lazy" />
           </div>
           <div class="card-body">
             <span class="card-tag">Comedy</span>
@@ -62,7 +71,7 @@
 
         <a class="card" href="posts/2025-12-24-Sketch.html">
           <div class="card-thumb">
-            <div class="card-thumb-placeholder">🎭</div>
+            <img src="posts/IMG_7897.jpg" alt="Sketch Comedy class group photo" loading="lazy" />
           </div>
           <div class="card-body">
             <span class="card-tag">Comedy</span>
@@ -192,5 +201,22 @@
   </footer>
 
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    const input = document.getElementById('search-input');
+    const clearBtn = document.getElementById('search-clear');
+    const cards = document.querySelectorAll('.card');
+
+    function doSearch() {
+      const q = input.value.trim().toLowerCase();
+      clearBtn.style.display = q ? 'flex' : 'none';
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = (!q || text.includes(q)) ? '' : 'none';
+      });
+    }
+
+    input.addEventListener('input', doSearch);
+    clearBtn.addEventListener('click', () => { input.value = ''; doSearch(); input.focus(); });
+  </script>
 </body>
 </html>

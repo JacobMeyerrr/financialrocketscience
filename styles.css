@@ -95,6 +95,56 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ============================================================
+   SEARCH BAR
+   ============================================================ */
+.search-bar-wrap {
+  background: #111;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0 14px;
+  height: 38px;
+  transition: border-color .2s;
+}
+.search-bar:focus-within {
+  border-color: var(--accent);
+}
+.search-icon {
+  color: #666;
+  flex-shrink: 0;
+}
+#search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-family: 'Barlow', sans-serif;
+  font-size: .9rem;
+  caret-color: var(--accent);
+}
+#search-input::placeholder { color: #555; }
+.search-clear {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: .85rem;
+  padding: 0;
+  display: none;
+  align-items: center;
+  line-height: 1;
+}
+.search-clear:hover { color: var(--accent); }
+
+/* ============================================================
    HOMEPAGE — POST LIST
    ============================================================ */
 .page-title {
@@ -117,7 +167,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Card row — image left, text right (MPMD category style) */
 .card {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: auto 1fr;
   gap: 0;
   border-bottom: 1px solid var(--border);
   background: transparent;
@@ -128,15 +178,17 @@ img { max-width: 100%; height: auto; display: block; }
 .card:hover { background: var(--bg2); }
 
 .card-thumb {
-  aspect-ratio: 16/9;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--bg3);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin: 20px;
+  margin: 16px;
   border-radius: 2px;
+  width: 140px;
+  min-width: 140px;
 }
 
 .card-thumb img {
@@ -456,14 +508,15 @@ img { max-width: 100%; height: auto; display: block; }
   .nav { justify-content: center; }
 
   .card {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
   }
   .card-thumb {
-    margin: 16px 16px 0;
-    aspect-ratio: 16/9;
+    width: 100px;
+    min-width: 100px;
+    margin: 12px;
   }
   .card-body {
-    padding: 12px 16px 16px;
+    padding: 12px 12px 12px 0;
   }
 
   .article-title { font-size: 1.5rem; }
