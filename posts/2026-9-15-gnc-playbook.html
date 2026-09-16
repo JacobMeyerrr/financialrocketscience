@@ -15,7 +15,18 @@
     .toc-box a:hover{text-decoration:underline;}
     .back-to-toc{display:inline-block;margin:.25rem 0 1.25rem;font-size:.8rem;color:#888;text-decoration:none;}
     .back-to-toc:hover{text-decoration:underline;}
-    .book-cover{display:block;margin:1.5rem auto;width:min(300px,60%);height:auto;border-radius:4px;border:1px solid #2e2e2e;}
+    .book-cover{display:block;margin:1.5rem auto;width:min(390px,78%);height:auto;border-radius:4px;border:1px solid #2e2e2e;}
+
+    .subtoc{list-style:none;padding-left:1.1rem;margin:.2rem 0;}
+    .subtoc li{margin:.25rem 0;}
+    .subnum{display:inline-block;min-width:2.2em;color:#888;font-variant-numeric:tabular-nums;}
+    .codeblock{position:relative;margin:1.25rem 0 2rem;}
+    .code-pre{white-space:pre-wrap;word-wrap:break-word;padding:1.25rem 1.5rem;border:1px solid #2e2e2e;border-radius:4px;background:rgba(127,127,127,0.06);font-size:0.85rem;line-height:1.5;margin:0;}
+    .copy-btn{position:absolute;top:.6rem;right:.6rem;font:inherit;font-size:.72rem;padding:.3rem .7rem;border:1px solid #2e2e2e;border-radius:4px;background:rgba(127,127,127,0.12);color:inherit;cursor:pointer;}
+    .copy-btn:hover{background:rgba(127,127,127,0.22);}
+    .copy-btn.copied{background:rgba(80,170,110,0.25);border-color:rgba(80,170,110,0.5);}
+    h2 a.head-toc, h3 a.head-toc{color:inherit;text-decoration:none;}
+    h2 a.head-toc:hover, h3 a.head-toc:hover{text-decoration:underline;}
   </style>
 </head>
 <body>
@@ -52,22 +63,22 @@
     <header class="article-header">
       <span class='article-tag'>Career, Grad School, Personal Development</span>
       <h1 class="article-title">The GNC Playbook – How To Break Into GNC, Be Successful, &amp; Land Your Dream Job</h1>
-      <div class='article-meta'>Sep 15, 2026 · Category: Career, Grad School, Personal Development</div>
+      <div class='article-meta'>Sep 14, 2026 · Category: Career, Grad School, Personal Development</div>
     </header>
 
     <div class="article-body">
 
-      <p><em>How to land your first job (or dream job) in GNC.</em></p>
+      <p><strong><em>How to land your first job (or dream job) in GNC.</em></strong></p>
 
-      <div class="toc-box" id="toc">
-        <h2>Table of Contents</h2>
+      <h2 id="toc" style="margin-bottom:.5rem;">Table of Contents</h2>
+      <div class="toc-box">
         <ol>
           <li><a href="#intro">Intro</a></li>
           <li><a href="#disclaimer">Disclaimer</a></li>
           <li><a href="#structure">How This Document Will Be Structured</a>
-            <ol>
-              <li><a href="#mini-book">This is essentially a mini book on GNC</a></li>
-            </ol>
+            <ul class="subtoc">
+              <li><span class="subnum">3.1</span> <a href="#mini-book">This is essentially a mini book on GNC</a></li>
+            </ul>
           </li>
           <li><a href="#acknowledgements">Acknowledgements</a></li>
           <li><a href="#easy">"Getting a GNC Job is 'Easy' if you know what these companies are looking for"</a></li>
@@ -78,16 +89,16 @@
           <li><a href="#coverletters">Coverletters</a></li>
           <li><a href="#github">Make a GitHub!</a></li>
           <li><a href="#learning-curve">The Learning Curve / Learning Process</a>
-            <ol>
-              <li><a href="#learning-curve-stages">The Learning Curve + 3 Stages of Learning Complex Skills</a></li>
-              <li><a href="#enhancing-learning">Methods for Enhancing Learning</a></li>
-            </ol>
+            <ul class="subtoc">
+              <li><span class="subnum">11.1</span> <a href="#learning-curve-stages">The Learning Curve + 3 Stages of Learning Complex Skills</a></li>
+              <li><span class="subnum">11.2</span> <a href="#enhancing-learning">Methods for Enhancing Learning</a></li>
+            </ul>
           </li>
           <li><a href="#network-no-connections">How To Network – If You Have No Connections, No Access</a>
-            <ol>
-              <li><a href="#optimization-process">The Optimization Process</a></li>
-              <li><a href="#cold-outreach">"I'm a New Grad / Student and Want To Learn" – Cold Outreach</a></li>
-            </ol>
+            <ul class="subtoc">
+              <li><span class="subnum">12.1</span> <a href="#optimization-process">The Optimization Process</a></li>
+              <li><span class="subnum">12.2</span> <a href="#cold-outreach">"I'm a New Grad / Student and Want To Learn" – Cold Outreach</a></li>
+            </ul>
           </li>
           <li><a href="#network-connections">How To Network – If You Have Connections</a></li>
           <li><a href="#embrace-failure">Embrace Failure – It's Part of The Process</a></li>
@@ -96,11 +107,11 @@
           <li><a href="#project-ideas">GNC Project Ideas To Stand Out</a></li>
           <li><a href="#skills">Some Skills and Softwares To Learn</a></li>
           <li><a href="#supplemental">Supplemental Resources For C++ Practice, SWE Principles</a>
-            <ol>
-              <li><a href="#books">Software and C++ Books - Must Read</a></li>
-              <li><a href="#coding-tests">Coding Tests + Multiple Choice</a></li>
-              <li><a href="#cpp-concepts">C++ Concepts Continued…</a></li>
-            </ol>
+            <ul class="subtoc">
+              <li><span class="subnum">19.1</span> <a href="#books">Software and C++ Books - Must Read</a></li>
+              <li><span class="subnum">19.2</span> <a href="#coding-tests">Coding Tests + Multiple Choice</a></li>
+              <li><span class="subnum">19.3</span> <a href="#cpp-concepts">C++ Concepts Continued…</a></li>
+            </ul>
           </li>
           <li><a href="#interview-flow">Typical Interview Flow</a></li>
           <li><a href="#example-questions">GNC Interviews - Example Questions</a></li>
@@ -108,7 +119,7 @@
         </ol>
       </div>
 
-      <h2 id="intro">Intro</h2>
+      <h2 id="intro"><a class="head-toc" href="#toc">Intro</a></h2>
 
       <p>In this document, I’m going to share insights which I think will help anyone pursuing a career in GNC – primarily what to do if you want to break into GNC as I just did, but also what to do if you’re already early in your GNC career but want to take your skills to another level.</p>
 
@@ -122,11 +133,11 @@
 
       <p>In hindsight, I wish I’d landed similar opportunities way sooner, hopefully this document will help you avoid some of the mistakes I made when pursuing a GNC career and help you land your desired role.</p>
 
-      <h2 id="disclaimer">Disclaimer</h2>
+      <h2 id="disclaimer"><a class="head-toc" href="#toc">Disclaimer</a></h2>
 
       <p>This document is just a brief overview, is my perspective (not official positions of USC or any of my employers - past, present, or future), but a lot of this is stuff that I wish I knew 3-4 years ago, and depending on where you’re starting at, it could potentially save years of effort if it helps you land your first job (or your dream) job in GNC.</p>
 
-      <h2 id="structure">How This Document Will Be Structured</h2>
+      <h2 id="structure"><a class="head-toc" href="#toc">How This Document Will Be Structured</a></h2>
 
       <p>The overall goal of this document is to get you your first job (or your dream job) in Spacecraft GNC. It will be part strategy/philosophy, but it will also be very tactical and granular.</p>
 
@@ -138,7 +149,7 @@
 
       <p>As I’ll allude to below, knowing what to focus on – both in terms of what projects to create, and also in terms of what fundamentals to study up to succeed in interviews – is honestly 90% of the battle, so hopefully this document will do that so that you can execute and succeed!</p>
 
-      <h3 id="mini-book">This is essentially a mini book on GNC</h3>
+      <h3 id="mini-book"><a class="head-toc" href="#toc">This is essentially a mini book on GNC</a></h3>
 
       <p>In his January 2025 advice to me recorded on his podcast (<a href="2026-9-11-cal-newport-advice.html">outlined in this article</a>), Cal Newport challenged me to effectively “write a short book on how to do X”, with “X” being what I decided to pursue, which in this case ended up being GNC (along with content and entrepreneurship, where I’ve written the equivalent of “a book” on with this blog).</p>
 
@@ -146,7 +157,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="acknowledgements">Acknowledgements</h2>
+      <h2 id="acknowledgements"><a class="head-toc" href="#toc">Acknowledgements</a></h2>
 
       <p>Before I dive into it, I want to acknowledge all of the people who have helped me throughout the years – from all of my professors and fellow PhD Students at USC who gave great advice, to industry veterans who were gracious with offering some of their time and advice to me, and even people outside of the industry such as those from the USC creator and entrepreneurship talks and events I attended. Even their frameworks translated very well to this career search and self-discovery process.</p>
 
@@ -154,7 +165,7 @@
 
       <p>All of this advice is the culmination of advice from over 100+ very smart and talented people, and I definitely wouldn’t be where I am today if it weren’t for them and their generosity!</p>
 
-      <h2 id="easy">”Getting a GNC Job is ‘Easy’ if you know what these companies are looking for”</h2>
+      <h2 id="easy"><a class="head-toc" href="#toc">”Getting a GNC Job is ‘Easy’ if you know what these companies are looking for”</a></h2>
 
       <p>In March 2023, as I was finishing my Master’s in Astronautical Engineering at USC, I attended a USC Social Media creator talk given by YouTuber Alan Chikin Chow – the top YouTube shorts creator in the world (even over Mr Beast still!) and a 2019 alumnus of USC.</p>
 
@@ -172,7 +183,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="near-peer">The Importance of “Near-Peer Mentors”</h2>
+      <h2 id="near-peer"><a class="head-toc" href="#toc">The Importance of “Near-Peer Mentors”</a></h2>
 
       <p>Harkening back to <a href="2026-1-9-Honarvar-Talk.html">Zack Honarvar’s talk at USC,</a> one of the biggest things that I learned from that talk is that having “neer-peer” mentors is one of the best ways to get ahead early in your career.</p>
 
@@ -184,7 +195,7 @@
 
       <p>While getting advice from both is useful, I think that “near-peer mentors” have helped significantly more in my own life and career. Life is complicated, and “the devil is in the details,” so hopefully I can serve as one of those “near-peer mentors” here since the details are still fresh for me in a way that is helpful.</p>
 
-      <h2 id="iron-law">Brian Tracy’s “Iron Law”</h2>
+      <h2 id="iron-law"><a class="head-toc" href="#toc">Brian Tracy’s “Iron Law”</a></h2>
 
       <p>Brian Tracy has been one of my favorite authors since I first picked up his best-seller “No Excuses!” off the discount rack at Barnes &amp; Noble in Minnesota in Spring 2018.</p>
 
@@ -198,7 +209,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="whats-important">What’s Important</h2>
+      <h2 id="whats-important"><a class="head-toc" href="#toc">What’s Important</a></h2>
 
       <p>So now that I’ve driven home the point that you must figure out what’s important, and then execute on accomplishing those things – but… what is actually important, then?</p>
 
@@ -231,7 +242,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="the-how">”The How”</h2>
+      <h2 id="the-how"><a class="head-toc" href="#toc">”The How”</a></h2>
 
       <p>Now that you understand the high-level of WHAT to work on (with more specifics below), learning HOW to go about executing on that is the next most important thing.</p>
 
@@ -239,7 +250,7 @@
 
       <p>Given that, here’s how you succeed in the three most important areas that I’ve overviewed so far:</p>
 
-      <p><b>The Fundamentals</b></p>
+      <p><b>1) The Fundamentals</b></p>
       <ul>
         <li>With fundamentals, begin by gathering all the questions and solutions, then rewrite all concepts and equations on a master “equation sheet”, break it down into also listing out each variable, what it means, and the units, and do that until you understand what each concept, variable, and equation means. Once you’ve done all of this, memorize them with flashcards (optionally in tandem with a whiteboard) until you get everything right. This will all be difficult, but is totally worth it.
           <ul>
@@ -253,7 +264,7 @@
         </li>
       </ul>
 
-      <p><b>Projects</b></p>
+      <p><b>2) Projects</b></p>
 
       <p>The most important thing for landing any job is that hiring managers want to see that you have hands-on experience outside of the classroom related to the job you’re trying to get.</p>
 
@@ -295,7 +306,7 @@
       <p>You’re not a budding entrepreneur trying to convince VCs to fund you and your business idea, but you are an aspiring GNC Engineer trying to convince companies to hire you, and being able to say that you did really good at doing real GNC work in the past is a great way of convincing companies that you’ll do well working for them in the future.</p>
       </aside>
 
-      <p><b>Learn to sell</b></p>
+      <p><b>3) Learn to sell</b></p>
 
       <p>At risk of repeating myself from my previous articles, I’ll simply quote myself from my <a href="2026-5-14-how-to-land-top-internship.html">“How To Land Your Dream Job or Internship”</a> article here:</p>
 
@@ -313,7 +324,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="coverletters">Coverletters</h2>
+      <h2 id="coverletters"><a class="head-toc" href="#toc">Coverletters</a></h2>
 
       <p>I won’t give away my coverletter template here unfortunately (at least not yet), but coverletters can absolutely work well if you sell yourself the right way, especially early in your career.</p>
 
@@ -323,7 +334,7 @@
 
       <p>Once you understand what they’re looking for, and how you can deliver for them if they hire you, then it actually becomes much easier to tailor coverletters once you come from that perspective.</p>
 
-      <h2 id="github">Make a GitHub!</h2>
+      <h2 id="github"><a class="head-toc" href="#toc">Make a GitHub!</a></h2>
 
       <p>For the entire four years of my PhD, I shared an office with a fellow PhD student who eventually became a space entrepreneur. He specialized in GNC during his PhD at USC and immediately proceeded to raise money for and start his own space company that he cofounded around the time of his PhD graduation in May 2026.</p>
 
@@ -337,9 +348,9 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="learning-curve">The Learning Curve / Learning Process</h2>
+      <h2 id="learning-curve"><a class="head-toc" href="#toc">The Learning Curve / Learning Process</a></h2>
 
-      <h3 id="learning-curve-stages">The Learning Curve + 3 Stages of Learning Complex Skills</h3>
+      <h3 id="learning-curve-stages"><a class="head-toc" href="#toc">The Learning Curve + 3 Stages of Learning Complex Skills</a></h3>
 
       <p>In this section, I’m going to go through the different types of learning (declarative/knowledge based, procedural/rule based, and automaticity/skill-based), the accompanying learning curve, and how to take that knowledge to actually enhance your GNC learning (“training”).</p>
 
@@ -367,7 +378,7 @@
 
       <p>Getting to that point – where you can fully solve those problems in an “accurate emulation of the operational environment” (GNC interviews or coding tests) – is crucial, but the other thing to look out for is that you must constantly refresh and re-test these skills, otherwise you’ll lose them over time too. In Reisman's lectures, he explicitly pointed out that in order to retain automaticity, that the “[training] <b>must be sufficiently recent</b>.”</p>
 
-      <h3 id="enhancing-learning">Methods for Enhancing Learning</h3>
+      <h3 id="enhancing-learning"><a class="head-toc" href="#toc">Methods for Enhancing Learning</a></h3>
 
       <p>Some great (scientifically-backed) quick pointers from the lecture for enhancing “training”/learning, used in real NASA Astronaut Training and Reisman’s lectures with great success are:</p>
       <ul>
@@ -407,9 +418,9 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="network-no-connections">How To Network – If You Have No Connections, No Access</h2>
+      <h2 id="network-no-connections"><a class="head-toc" href="#toc">How To Network – If You Have No Connections, No Access</a></h2>
 
-      <h3 id="optimization-process">The Optimization Process</h3>
+      <h3 id="optimization-process"><a class="head-toc" href="#toc">The Optimization Process</a></h3>
 
       <p>If you’re just starting out as a student or are someone who isn’t in the space industry but wants to pivot, the best strategy to try and figure out how to become successful – when you don’t have access to anyone on the inside to ask advice from – is to use a strategy similar to Steven He when he first started out as a creator, similar to how <a href="2026-1-4-StevenHe.html">I outline in my article on his creator journey.</a></p>
 
@@ -423,7 +434,7 @@
 
       <p>This is especially good if you’re looking for project ideas since you can just see what they did and build those projects on your own time – although it’s great for general strategy, learning, and understanding too.</p>
 
-      <h3 id="cold-outreach">”I’m a New Grad / Student and Want To Learn” – Cold Outreach</h3>
+      <h3 id="cold-outreach"><a class="head-toc" href="#toc">”I’m a New Grad / Student and Want To Learn” – Cold Outreach</a></h3>
 
       <p>Something I was taught when I was at Honeybee Robotics – when I was asking advice for helping friends who were struggling land jobs – was to do cold outreach for coffee chats on LinkedIn with people with careers/jobs you wanted and say the following:</p>
 
@@ -433,7 +444,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="network-connections">How To Network – If You Have Connections</h2>
+      <h2 id="network-connections"><a class="head-toc" href="#toc">How To Network – If You Have Connections</a></h2>
 
       <p>The main thing if you have connections is that you should still be using the “Optimization” process as much as you can – even Steven still uses it even though he can now talk to top creators like Mr. Beast and have those additional channels for feedback and improvement.</p>
 
@@ -457,7 +468,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="embrace-failure">Embrace Failure – It’s Part of The Process</h2>
+      <h2 id="embrace-failure"><a class="head-toc" href="#toc">Embrace Failure – It’s Part of The Process</a></h2>
 
       <p>I’ll sound like a broken record bringing up Steven He’s content journey as an example again, but it’s a great, intuitive analogy for success in a lot of other areas of life.</p>
 
@@ -493,7 +504,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="name-brands">Name-Brands on Your Resume Can Help… But…</h2>
+      <h2 id="name-brands"><a class="head-toc" href="#toc">Name-Brands on Your Resume Can Help… But…</a></h2>
 
       <p>One of the points I want to make is that I think having a brand-name on your resume – like me with my Spring 2026 Blue Origin GNC Internship – lends you a lot of credibility which opens doors.</p>
 
@@ -505,7 +516,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="types-of-gnc">Different Types of GNC Engineers</h2>
+      <h2 id="types-of-gnc"><a class="head-toc" href="#toc">Different Types of GNC Engineers</a></h2>
 
       <p>Within GNC Engineering, there’s a few different types of GNC Engineers:</p>
       <ul>
@@ -555,7 +566,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="project-ideas">GNC Project Ideas To Stand Out</h2>
+      <h2 id="project-ideas"><a class="head-toc" href="#toc">GNC Project Ideas To Stand Out</a></h2>
 
       <p>As I mentioned in bullet point 2 of “the “How” section, the most important thing by far that you need to do (in conjunction with mastering technical fundamentals) is to have actual projects or other evidence of competence in GNC – whether it’s previous work experience, side projects, and so on.</p>
 
@@ -615,7 +626,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="skills">Some Skills and Softwares To Learn</h2>
+      <h2 id="skills"><a class="head-toc" href="#toc">Some Skills and Softwares To Learn</a></h2>
 
       <p>I won’t give an exhaustive list here, but I’ll point out some essential skills and softwares which you should definitely master if you want to be successful for most space GNC interviews.</p>
 
@@ -668,9 +679,9 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="supplemental">Supplemental Resources For C++ Practice, SWE Principles</h2>
+      <h2 id="supplemental"><a class="head-toc" href="#toc">Supplemental Resources For C++ Practice, SWE Principles</a></h2>
 
-      <h3 id="books">Software and C++ Books - Must Read</h3>
+      <h3 id="books"><a class="head-toc" href="#toc">Software and C++ Books - Must Read</a></h3>
 
       <p>In this section, I’m going to point out some of the best resources to prepare for the rigorous NewSpace C++ coding tests. As emphasized repeatedly above, this was the second largest barrier for me in the 31+ interviews I’ve conducted over the last 13 months other than the lack of Post-PhD “experience” hurdle.</p>
 
@@ -696,7 +707,7 @@
 
       <p>Pairing the two books gives you the exact combination of clean software design philosophy and raw coding mechanics required to do well in these interviews and as a real GNC Engineer.</p>
 
-      <h3 id="coding-tests">Coding Tests + Multiple Choice</h3>
+      <h3 id="coding-tests"><a class="head-toc" href="#toc">Coding Tests + Multiple Choice</a></h3>
 
       <p>Once you’ve read through the books, written down the key concepts and syntax from the books, then “understood the why” behind everything and memorized all as flashcards as all outlined in the “how to study” sections above, the next thing is to actually write some code.</p>
 
@@ -710,13 +721,17 @@
 
       <p>I’ve come up with a prompt which you can use with LLMs for the multiple choice style questions specifically – it might not cover everything, but hopefully it’s a good starting point!</p>
 
-      <pre style="white-space:pre-wrap; word-wrap:break-word; padding:1.25rem 1.5rem; border:1px solid #2e2e2e; border-radius:4px; background:rgba(127,127,127,0.06); font-size:0.85rem; line-height:1.5;">Act as an expert C++ interviewer for GNC flight software roles at top aerospace companies. Generate a 5-question multiple-choice debugging test. Each question: one ~40–70 line snippet of realistic multi-class production code (includes, classes, constructors/destructors, an orchestrator function) that compiles cleanly, plus 4 choices (A–D) with only one correct choice despite the other three being plausibly-sounding. Hide exactly one subtle flaw per snippet — a logical, semantic, or memory-safety bug, never syntax or beginner mistakes — drawn from core modern-C++ pitfalls: resource/handle leaks on early returns or failed construction, shallow-copy double-frees from missing copy/assignment operators, use-after-move, slicing of polymorphic types stored by value, uninitialized locals, and buffer over-reads from unchecked sizes. Give correct answers and explanations at the end.</pre>
+      <div class="codeblock">
+        <button class="copy-btn" type="button" onclick="copyCode(this)">Copy</button>
+        <pre class="code-pre">Act as an expert C++ interviewer for GNC flight software roles at top aerospace companies. Generate a 5-question multiple-choice debugging test. Each question: one ~40–70 line snippet of realistic multi-class production code (includes, classes, constructors/destructors, an orchestrator function) that compiles cleanly, plus 4 choices (A–D) with only one correct choice despite the other three being plausibly-sounding. Hide exactly one subtle flaw per snippet — a logical, semantic, or memory-safety bug, never syntax or beginner mistakes — drawn from core modern-C++ pitfalls: resource/handle leaks on early returns or failed construction, shallow-copy double-frees from missing copy/assignment operators, use-after-move, slicing of polymorphic types stored by value, uninitialized locals, and buffer over-reads from unchecked sizes. Give correct answers and explanations at the end.</pre>
+      </div>
+
 
       <p>The next sub-section below will review which types of concepts to study in general and how to practice for the free-response questions in particular, with specific advice given to me by GNC Engineer at several top NewSpace companies.</p>
 
       <p>The coding test is often the hardest part and biggest filter for GNC interviews, so hopefully all of this helps!</p>
 
-      <h3 id="cpp-concepts">C++ Concepts Continued…</h3>
+      <h3 id="cpp-concepts"><a class="head-toc" href="#toc">C++ Concepts Continued…</a></h3>
 
       <p>The previous sub-section ended off primarily focused on the multiple choice aspect that you may (or may not, depending on the company) get on coding tests. This sub-section of the playbook will finish off by listing off topics to know for the written portion of coding tests, and suggestions for how to apply and practice the concepts with LLMs.</p>
 
@@ -742,7 +757,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="interview-flow">Typical Interview Flow</h2>
+      <h2 id="interview-flow"><a class="head-toc" href="#toc">Typical Interview Flow</a></h2>
 
       <p>Something I didn’t know until just over a year ago was how interview flows worked – In fact, I (somewhat embarrassingly) didn’t even know what a hiring manager was until last year either! (despite 4+ years of USC Astronautical Engineering Grad School)</p>
 
@@ -764,7 +779,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="example-questions">GNC Interviews - Example Questions</h2>
+      <h2 id="example-questions"><a class="head-toc" href="#toc">GNC Interviews - Example Questions</a></h2>
 
       <p>Over the course of the last ~13-½ months, I’ve interviewed with 31 different space and aerospace companies – including all of the top ones, with some repeats (for different GNC roles) – and I’ve had many more interviews than that over that same time period!</p>
 
@@ -875,7 +890,7 @@
 
       <a class="back-to-toc" href="#toc">↑ Back to Table of Contents</a>
 
-      <h2 id="conclusion">Conclusion</h2>
+      <h2 id="conclusion"><a class="head-toc" href="#toc">Conclusion</a></h2>
 
       <p>Congratulations on getting this far if you’ve managed to read through the entire post!</p>
 
@@ -894,6 +909,8 @@
       <p>Overall, GNC is a high-demand, very exciting field which gives your career a lot of options, while also having top-notch pay and compensation opportunities.</p>
 
       <p>It’s a great field to go into within the space industry and will only see growth in demand, both because of the amount of stuff that’s being launched into space now, and because it’s also adjacent to AI, which is a fast growing field in of itself.</p>
+
+      <p>GNC and Autonomy is one of the highest paying fields in aerospace, and this (completely free!) document could potentially make you multiple seven figures or more worth of value if you apply the principles properly!</p>
 
       <p>Godspeed! Ad Astra!</p>
 
@@ -914,5 +931,19 @@
   </footer>
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 
+  <script>
+    function copyCode(btn){
+      var pre = btn.parentElement.querySelector('.code-pre');
+      var text = pre ? pre.innerText : '';
+      function done(){ var old = btn.textContent; btn.textContent='Copied!'; btn.classList.add('copied'); setTimeout(function(){ btn.textContent=old; btn.classList.remove('copied'); },1600); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done, function(){ fallback(text); done(); });
+      } else { fallback(text); done(); }
+    }
+    function fallback(text){
+      var ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(ta);
+    }
+  </script>
 </body>
 </html>
