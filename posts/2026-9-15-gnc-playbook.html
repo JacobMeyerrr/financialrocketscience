@@ -594,7 +594,7 @@
 
       <p>With these, it’ll be much easier to interview since you’ll have a lot to talk about, and as a result, it’ll be much easier to convince companies to hire you for GNC if you’ve done GNC before and done it at a relatively high level (similar to the Reisman idea/quote I presented earlier).</p>
 
-      <p>Maybe you don’t need to take it to the extreme that Tom Mueller did by building a 13,000 lb liquid-rocket engine in your garage, but if you want to get one of these top jobs, you’ll have to go above and beyond, especially if you’re trying to still get your first job in Space GNC.</p>
+      <p>Maybe you don’t need to take it to the extreme that Tom Mueller did by building an amateur record-breaking 13,000 lb liquid-rocket engine in your garage, but if you want to get one of these top jobs, you’ll have to go above and beyond, especially if you’re trying to still get your first job in Space GNC.</p>
 
       <p>If you’re a student, this is relatively easy. You’ll have to join either a professor’s research lab where you can do (and publish!) impressive GNC work, or a top student group which will allow you to solve some hard GNC problems and also write production C++ code.</p>
 
@@ -705,7 +705,7 @@
 
       <h3 id="books"><a class="head-toc" href="#toc">Software and C++ Books - Must Read</a></h3>
 
-      <p>In this section, I’m going to point out some of the best resources to prepare for the rigorous NewSpace C++ coding tests. As emphasized repeatedly above, this was the second largest barrier for me in the 31+ interviews I’ve conducted over the last 13 months other than the lack of Post-PhD “experience” hurdle.</p>
+      <p>In this section, I’m going to point out some of the best resources to prepare for the rigorous NewSpace C++ coding tests. As emphasized repeatedly above, this was the second largest barrier for me in the 31+ interviews I’ve conducted over the last 13 months other than the "lack of" Post-PhD “experience” hurdle.</p>
 
       <p>The good thing about those interviews, in retrospect, is that they also doubled as informational interviews where I could ask actual industry GNC engineers from these top companies for all of their advice and useful resources, a few of which I’ll lay out below.</p>
 
@@ -713,9 +713,9 @@
 
       <img class="book-cover" src="Ousterhout_Book.webp" alt="A Philosophy of Software Design (2nd edition) by John Ousterhout — book cover">
 
-      <p>This was recommended to me recently – in early August 2026 – by a former SpaceX Software Engineer I was able to chat with.</p>
+      <p>This was recommended to me recently – in early August 2026 – by a former SpaceX Software Engineer interviewed me for a GNC role.</p>
 
-      <p>The former SpaceX SWE mentioned that “every Software Engineer [and GNC Software person] at SpaceX had a copy of this book on their desk” and that it’s a very good book to get overall software design principles down. It’s even helped me answer some software architecture questions in interviews since, so it’s already come in handy, and it’s also well written and easy to read!</p>
+      <p>The former SpaceX SWE mentioned that “every Software Engineer [and GNC Software person] at SpaceX had a copy of this book on their desk” and that it’s a very good book to get overall software design principles down. It’s even helped me answer some software architecture questions in interviews since, so it’s already come in handy, and it’s also well written and easy to read.</p>
 
       <p>Secondly, the next and final book so far that was recommended to me was recommended by a Senior GNC Engineer at another top space company later this summer:</p>
 
@@ -731,23 +731,22 @@
 
       <h3 id="coding-tests"><a class="head-toc" href="#toc">Coding Tests + Multiple Choice</a></h3>
 
-      <p>Once you’ve read through the books, written down the key concepts and syntax from the books, then “understood the why” behind everything and memorized all as flashcards as all outlined in the “how to study” sections above, the next thing is to actually write some code.</p>
+      <p>Once you’ve read through the books, written down the key concepts and syntax from the books, and “understood the why” behind everything and memorized all as flashcards as all outlined in the “how to study” sections above, the next thing is to actually practice by writing some code.</p>
 
-      <p>Many companies will actually put you through coding tests and require you to write C++ code without any outside references, also without a large language model, and you usually have to write some type of algorithm (with constraints) that completes a task that you’re given.</p>
+      <p>Many companies will actually put you through coding tests and require you to write C++ code without any outside references, including without large language models, and you usually have to write some type of algorithm (with constraints) that completes a task that you’re given.</p>
 
       <p>Sometimes these tests also feature multiple choice sections – which in my opinion were actually HARDER than just writing and running your own code from scratch, at least for where I’m currently at in my journey, especially since you couldn’t run the code to debug it.</p>
 
-      <p>The multiple choice questions I had during these tests were much more complex than what I got when I originally asked ChatGPT to generate “realistic practice tests.” As such, I’ll write as many (general) topics as I can remember here which could be useful for general practice:</p>
+      <p>The multiple choice questions I had during these tests were much more complex than what I got when I originally asked ChatGPT to generate “realistic practice tests.” As such, I’ll write as many (general) topics and tips as I can remember here which could be useful for general practice.</p>
 
       <p>Overall, the primary core buckets of topics for multiple choice questions (where you basically answer “Review this code – what’s wrong with this code?” and are presented with four answers to select from) were: memory leak patterns, pointer bugs, and object oriented “anti-patterns.”</p>
 
-      <p>I’ve come up with a prompt which you can use with LLMs for the multiple choice style questions specifically – it might not cover everything, but hopefully it’s a good starting point!</p>
+      <p>I’ve come up with a prompt which you can use with LLMs for the multiple choice style questions specifically – it might not cover everything, but hopefully it’s a good starting point:</p>
 
       <div class="codeblock">
         <button class="copy-btn" type="button" onclick="copyCode(this)">Copy</button>
-        <pre class="code-pre">Act as an expert C++ interviewer for GNC flight software roles at top aerospace companies. Generate a 5-question multiple-choice debugging test. Each question: one ~40–70 line snippet of realistic multi-class production code (includes, classes, constructors/destructors, an orchestrator function) that compiles cleanly, plus 4 choices (A–D) with only one correct choice despite the other three being plausibly-sounding. Hide exactly one subtle flaw per snippet — a logical, semantic, or memory-safety bug, never syntax or beginner mistakes — drawn from core modern-C++ pitfalls: resource/handle leaks on early returns or failed construction, shallow-copy double-frees from missing copy/assignment operators, use-after-move, slicing of polymorphic types stored by value, uninitialized locals, and buffer over-reads from unchecked sizes. Give correct answers and explanations at the end.</pre>
+        <pre class="code-pre">Act as an expert C++ interviewer for GNC flight software roles at top aerospace companies. Generate a 5-question multiple-choice debugging test where each question asks "Review this code – what’s wrong with this code?." Each question will specifically consist of: one ~40–70 line snippet of realistic multi-class production code (includes, classes, constructors/destructors, an orchestrator function) that compiles cleanly, plus 4 choices (A–D) with only one correct choice despite the other three being plausibly-sounding. Hide exactly one subtle flaw per snippet — a logical, semantic, or memory-safety bug, never syntax or beginner mistakes — drawn from these core modern-C++ pitfalls: resource/handle leaks on early returns or failed construction, shallow-copy double-frees from missing copy/assignment operators, use-after-move, slicing of polymorphic types stored by value, uninitialized locals, and buffer over-reads from unchecked sizes. Give correct answers and explanations at the end.</pre>
       </div>
-
 
       <p>The next sub-section below will review which types of concepts to study in general and how to practice for the free-response questions in particular, with specific advice given to me by GNC Engineer at several top NewSpace companies.</p>
 
@@ -771,7 +770,7 @@
 
       <p>None of these coding tests allow large language models – the primary reason being that LLMs are non-deterministic and can’t reliably write good and verified flight code, which could be fatal for a multibillion dollar space mission, even if the code is “99% right.”</p>
 
-      <p>The 1% that’s wrong could cost billions, so as of now, most space and aerospace companies still have humans writing all of the code manually, so you’ll have to have all of these concepts down cold. You need your code to compile and work correctly in order to pass the test.</p>
+      <p>The 1% that’s wrong could cost billions, so as of now, most space and aerospace companies still have humans writing and verifying all of the code manually, and as a result, you’ll have to have all of these concepts down cold. You need your code to compile and work correctly in order to pass the test.</p>
 
       <p>Beyond these core, critical concepts outlined above, there’s some other C++ and software stuff that came up, but this covers the absolute basics and core fundamentals which are common across almost all GNC / C++ Flight Software interviews.</p>
 
@@ -795,7 +794,7 @@
 
       <p>Furthermore, for internships, the process isn’t nearly this lengthy the vast majority of the time – usually it’s just one interview, albeit you’ll dive right into technical questions and usually give a technical presentation, but it won’t be as long as this process. The only difference is that the internship itself is also a long “interview” for the company to get to know you as well.</p>
 
-      <p>When applying to jobs and writing coverletters and resumes, the people you need to impress to get the interview in the first place are usually the recruiters – although sometimes the hiring manager (engineer interviewing people) personally looks at resumes themselves, too.</p>
+      <p>When applying to jobs and writing coverletters and resumes, the people you need to impress to get the interview in the first place are usually the recruiters – although sometimes the hiring manager (engineer interviewing people) personally looks at resumes and coverletters themselves, too.</p>
 
       <p>If you can accumulate the skills and experiences that I outline in this document, you’ll be able to impress recruiters and hiring managers and be able to land said interviews.</p>
 
@@ -805,9 +804,9 @@
 
       <p>Over the course of the last ~13-½ months, I’ve interviewed with 31 different space and aerospace companies – including all of the top ones, with some repeats (for different GNC roles) – and I’ve had many more interviews than that over that same time period!</p>
 
-      <p>Either during, or after every interview, I wrote down as many questions as I could remember – I ended up collecting over 400 questions in a question bank that I kept, and I was probably asked many more (maybe ~double that) since I wasn’t able to remember all of the questions.</p>
+      <p>Either during, or after every interview, I wrote down as many questions as I could remember – I ended up collecting over 400 questions in a question bank that I kept, and I was probably asked many more (maybe ~double that) since I wasn’t able to remember all of the questions by the time I wrote them down.</p>
 
-      <p>I won’t be including any of those specific questions here, but I’ll include a representative sample.</p>
+      <p>I won’t be including any of those specific questions here, but I’ll include a representative sample of common questions or questions similar to what you could expect during a Space GNC interview.</p>
 
       <p>The sample questions are organized and divided into the following categories:</p>
       <ul>
@@ -876,6 +875,9 @@
         <li>When would you usually want to use an extended Kalman filter rather than a traditional Kalman filter?</li>
         <li>What about an IMU by itself would make an integrated solution perform badly? (without correction from other sensors etc.)</li>
         <li>How would you explain a Kalman filter intuitively (i.e. to non-GNC engineers)?</li>
+        <li>Estimate a resistor's resistance from commanded voltage and measured current — then keep your answer valid as I add sensor noise, then a constant current bias. (What makes this linear in the unknowns? How would you fit it online, without storing all the data?)</li>
+        <li>If that bias is slowly drifting (a random walk) and resistance is fixed, what kind of voltage excitation makes resistance observable — low or high frequency, and why?</li>
+        <li>(given a system) How would you model this system as a Kalman filter — what are your states, measurement model, and the prediction/dynamics step? (What are the "dynamics" of a fixed parameter vs. a drifting one?)</li>
       </ul>
 
       <p><b>Modeling &amp; Simulation</b></p>
@@ -918,7 +920,7 @@
 
       <p>This blog post is quite long, but is meant to be essentially the equivalent of “a short book” for aspiring or early career GNC Engineers to accelerate their career development.</p>
 
-      <p>I myself was essentially “trapped” in a low-paying niche of the space industry with little to no job prospects until I landed my Blue Origin GNC Intern offer about 13 and a half months ago.</p>
+      <p>I myself was essentially “trapped” in a low-paying niche of the space industry with little to no job prospects until I landed my Blue Origin GNC Intern offer about 13 and a half months ago. Spacecraft Contamination didn't contaminate me with ANY job offers, but GNC has been the total opposite!</p>
 
       <p>Since then, I’ve interned for Blue/Honeybee-Robotics in GNC, interviewed with 31+ different companies for GNC roles, and I’m about to pick between offers for my first full-time GNC job.</p>
 
@@ -932,7 +934,7 @@
 
       <p>It’s a great field to go into within the space industry and will only see growth in demand, both because of the amount of stuff that’s being launched into space now, and because it’s also adjacent to AI, which is a fast growing field in of itself.</p>
 
-      <p>GNC and Autonomy is one of the highest paying fields in aerospace, and this (completely free!) document could potentially make you multiple seven figures or more worth of value if you apply the principles properly!</p>
+      <p>Since GNC and Autonomy is one of the highest paying fields in aerospace, this (completely free!) document could potentially make you multiple seven figures or more worth of value if you apply the principles properly!</p>
 
       <p>Godspeed! Ad Astra!</p>
 
