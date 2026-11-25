@@ -823,88 +823,103 @@
 
       <p>Below are the representative questions from each individual category:</p>
 
-      <p><b>Astrodynamics &amp; Orbital Mechanics</b></p>
-      <ul>
-        <li>Can you draw a Hohmann transfer?</li>
-        <li>Can you list and explain all of the Keplerian elements for a classical orbit?</li>
-        <li>Are you familiar with the relative or orbital frames like LVLH or NTW frames?</li>
-        <li>Imagine you're in the LVLH frame and you're looking in the essentially circular orbit and you throw a golf ball forward. Describe to me the path that golf ball would take. Also, what happens to the relative velocities of both, and to the orbital elements of the golf ball?</li>
-        <li>Do you know what J2 is?</li>
-        <li>Which of the six orbital elements does J2 have a significant effect on?</li>
-        <li>If you were in a polar orbit, and you burn out of plane, which orbital element changes?</li>
-        <li>If I'm in an orbit and I do a maneuver, regardless of what direction I do the maneuver in, what has to be true about the new orbit versus the old orbit? (what changes)</li>
-        <li>Given a satellite that's at a specified altitude h_sat above the earth (and the earth's equitorial radius R_E = 6378 km), derive what % of the earth's surface you can see based on its altitude.</li>
-        <li>What is the Vernal equinox vector and why is it important?</li>
-        <li>Explain the ECI and ECEF frames, the differences, when you would use them, and what they’re useful for, etc.?</li>
-        <li>How would you change between the ECI and ECEF frames (vice versa)?</li>
-        <li>How do you design a sun synchronous orbit, and specifically, what orbital elements can/would you change to design this?</li>
-        <li>Your vehicle is moving in 2 body motion in inertial space. Your ground stations are fixed on the Earth. How would you handle that discrepancy?</li>
-      </ul>
+      
+      <style>
+        .gate{position:relative;margin:1.25rem 0 2rem;}
+        .gate-teaser{filter:blur(3px);opacity:.55;user-select:none;pointer-events:none;}
+        .gate-cat{margin:1.1rem 0 .5rem;}
+        .gate-count{color:#888;font-weight:normal;font-size:.85rem;}
+        .gate-lines{padding-left:1.4rem;}
+        .gate-line{display:block;height:.8rem;margin:.55rem 0;border-radius:3px;background:rgba(127,127,127,.35);}
+        .gate-panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,92%);padding:1.4rem 1.5rem;border:1px solid #2e2e2e;border-radius:6px;background:var(--bg,#111);box-shadow:0 10px 40px rgba(0,0,0,.35);text-align:center;}
+        .gate-panel h3{margin:0 0 .4rem;}
+        .gate-panel p{margin:.4rem 0;font-size:.9rem;}
+        .gate-form{display:flex;gap:.5rem;margin:.9rem 0 .4rem;}
+        .gate-form input{flex:1;min-width:0;font:inherit;padding:.5rem .7rem;border:1px solid #2e2e2e;border-radius:4px;background:rgba(127,127,127,.08);color:inherit;}
+        .gate-form button{font:inherit;padding:.5rem .9rem;border:1px solid #2e2e2e;border-radius:4px;background:rgba(127,127,127,.18);color:inherit;cursor:pointer;}
+        .gate-form button:disabled{opacity:.6;cursor:wait;}
+        .gate-msg{min-height:1.2em;color:#d77;}
+        .gate-buy a{font-weight:bold;}
+      </style>
+      <div class="gate" id="gnc-gate">
+        <div class="gate-teaser" aria-hidden="true">
+        <p class="gate-cat"><b>Astrodynamics &amp; Orbital Mechanics</b> <span class="gate-count">· 14 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:92%"></span><span class="gate-line" style="width:78%"></span><span class="gate-line" style="width:85%"></span><span class="gate-line" style="width:64%"></span></div>
+        <p class="gate-cat"><b>Spacecraft Attitude Dynamics &amp; Control (ADCS) + Related Sensors &amp; Actuators</b> <span class="gate-count">· 9 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:88%"></span><span class="gate-line" style="width:71%"></span><span class="gate-line" style="width:96%"></span><span class="gate-line" style="width:59%"></span></div>
+        <p class="gate-cat"><b>Classical Controls + Modern Control Theory &amp; Fundamentals</b> <span class="gate-count">· 10 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:81%"></span><span class="gate-line" style="width:74%"></span><span class="gate-line" style="width:92%"></span><span class="gate-line" style="width:78%"></span></div>
+        <p class="gate-cat"><b>Navigation &amp; State Estimation</b> <span class="gate-count">· 8 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:85%"></span><span class="gate-line" style="width:64%"></span><span class="gate-line" style="width:88%"></span><span class="gate-line" style="width:71%"></span></div>
+        <p class="gate-cat"><b>Modeling &amp; Simulation</b> <span class="gate-count">· 5 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:96%"></span><span class="gate-line" style="width:59%"></span><span class="gate-line" style="width:81%"></span><span class="gate-line" style="width:74%"></span></div>
+        <p class="gate-cat"><b>Software Engineering (Mostly C++, but also some Python)</b> <span class="gate-count">· 4 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:92%"></span><span class="gate-line" style="width:78%"></span><span class="gate-line" style="width:85%"></span><span class="gate-line" style="width:64%"></span></div>
+        <p class="gate-cat"><b>Misc Questions (e.g. behavioral, fit, logistics, etc.)</b> <span class="gate-count">· 5 questions</span></p>
+        <div class="gate-lines"><span class="gate-line" style="width:88%"></span><span class="gate-line" style="width:71%"></span><span class="gate-line" style="width:96%"></span><span class="gate-line" style="width:59%"></span></div>
+        </div>
+        <div class="gate-panel" role="region" aria-label="Unlock the question bank">
+          <h3>The full question bank is members-only</h3>
+          <p>55 representative questions across 7 categories. Enter the email you purchased with to unlock it.</p>
+          <form class="gate-form" id="gate-form">
+            <input type="email" id="gate-email" required placeholder="you@example.com" autocomplete="email" aria-label="Email">
+            <button type="submit" id="gate-btn">Unlock</button>
+          </form>
+          <p class="gate-msg" id="gate-msg" aria-live="polite"></p>
+          <p class="gate-buy">Don't have access yet? <a href="#">Get access</a></p>
+        </div>
+      </div>
+      <script type="application/json" id="gate-data">{"v":"d8vQuL7w","salt":"wzETk4hi+/mbJUl0ZJqzKg==","iter":600000,"iv":"cXnsR8EzSmH1Kgn5","ct":"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","slots":[{"iv":"uWK4vv6/FgMjjUWx","ct":"frPpMo3C7hu1xcp+i36RJnwnIZ508bpJbMsFWXzoijT/W6aZO/8jub2SR3c1gFPU"}]}</script>
+      <script>
+      (function(){
+        var D = JSON.parse(document.getElementById('gate-data').textContent);
+        var KEY = 'gncGate:' + D.v;
+        function b64(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+        function toB64(u){ var s=''; for (var i=0;i<u.length;i++) s+=String.fromCharCode(u[i]); return btoa(s); }
+        var S = window.crypto && window.crypto.subtle;
+        var msg = document.getElementById('gate-msg');
+        if (!S) { msg.textContent = 'Your browser can\'t unlock this page (needs HTTPS).'; return; }
 
-      <p><b>Spacecraft Attitude Dynamics &amp; Control (ADCS) + Related Sensors &amp; Actuators</b></p>
-      <ul>
-        <li>Can you name a few ways to represent the attitude of a vehicle? What are some advantages and disadvantages of each? (e.g. Euler vs Axis-Angle vs Quaternion)</li>
-        <li>Can you list some of the sensors you might expect to see on a spacecraft?</li>
-        <li>What type of measurement does a gyroscope output?</li>
-        <li>What would happen to an attitude estimate if a spacecraft only used an IMU?</li>
-        <li>How would you design spacecraft attitude control with reaction wheels? How many wheels do we need, and what is the optimal orientation to put them in?</li>
-        <li>If we have reaction wheels, what are some limitations of them that we need to think about?</li>
-        <li>What is the minimum number of reaction wheels you can have and still have 3-axis control with? (Trick Question! Think about cross-coupling…)</li>
-        <li>What about other types of actuators besides reaction wheels?</li>
-        <li>What is a quaternion? (+ explain)</li>
-      </ul>
+        async function kekFor(email){
+          var base = await S.importKey('raw', new TextEncoder().encode(email.trim().toLowerCase()), 'PBKDF2', false, ['deriveKey']);
+          return S.deriveKey({name:'PBKDF2', salt:b64(D.salt), iterations:D.iter, hash:'SHA-256'}, base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+        }
+        async function unwrap(kek){
+          for (var i=0;i<D.slots.length;i++){
+            try { return new Uint8Array(await S.decrypt({name:'AES-GCM', iv:b64(D.slots[i].iv)}, kek, b64(D.slots[i].ct))); } catch(e){}
+          }
+          return null;
+        }
+        async function reveal(raw){
+          var k = await S.importKey('raw', raw, 'AES-GCM', false, ['decrypt']);
+          var pt = await S.decrypt({name:'AES-GCM', iv:b64(D.iv)}, k, b64(D.ct));
+          var box = document.createElement('div');
+          box.innerHTML = new TextDecoder().decode(pt);
+          document.getElementById('gnc-gate').replaceWith(box);
+        }
 
-      <p><b>Classical Controls + Modern Control Theory &amp; Fundamentals</b></p>
-      <ul>
-        <li>What type of guidance experience do you have?</li>
-        <li>What type of navigation experience do you have?</li>
-        <li>What type of experience do you have on the pure controls side?</li>
-        <li>Consider a simple PID controller What do P, I, and D stand for? Also describe how each impacts error.</li>
-        <li>Explain what root locus and nyquist diagrams are and why they’re important.</li>
-        <li>Why would you not want too high of a gain or phase margin?</li>
-        <li>Do you know the physical significance of control bandwidth? Why would you not want a control bandwidth to be too high?</li>
-        <li>Are you familiar with modern controls methods?</li>
-        <li>Explain the difference between the time domain, frequency, and Laplace domains, and when you'd use each?</li>
-        <li>Which plane has stable poles, in which domain? What is the time-domain equation that corresponds to that and explains why? (LHP + Laplace + Exponentials)</li>
-      </ul>
+        // Remember unlock on this browser.
+        try {
+          var saved = localStorage.getItem(KEY);
+          if (saved) reveal(b64(saved)).catch(function(){ try{ localStorage.removeItem(KEY); }catch(e){} });
+        } catch(e){}
 
-      <p><b>Navigation &amp; State Estimation</b></p>
-      <ul>
-        <li>Do you know the main stages of a Kalman filter, and what each does?</li>
-        <li>How many satellites are needed to solve for a GNSS position and why?</li>
-        <li>When would you usually want to use an extended Kalman filter rather than a traditional Kalman filter?</li>
-        <li>What about an IMU by itself would make an integrated solution perform badly? (without correction from other sensors etc.)</li>
-        <li>How would you explain a Kalman filter intuitively (i.e. to non-GNC engineers)?</li>
-        <li>Estimate a resistor's resistance from commanded voltage and measured current — then keep your answer valid as I add sensor noise, then a constant current bias. (What makes this linear in the unknowns? How would you fit it online, without storing all the data?)</li>
-        <li>If that bias is slowly drifting (a random walk) and resistance is fixed, what kind of voltage excitation makes resistance observable — low or high frequency, and why?</li>
-        <li>(given a system) How would you model this system as a Kalman filter — what are your states, measurement model, and the prediction/dynamics step? (What are the "dynamics" of a fixed parameter vs. a drifting one?)</li>
-      </ul>
+        document.getElementById('gate-form').addEventListener('submit', async function(ev){
+          ev.preventDefault();
+          var btn = document.getElementById('gate-btn');
+          btn.disabled = true; msg.style.color=''; msg.textContent = 'Checking…';
+          try {
+            var raw = await unwrap(await kekFor(document.getElementById('gate-email').value));
+            if (!raw) { msg.textContent = 'That email isn\'t on the list. Use the email you purchased with, or get access below.'; return; }
+            try { localStorage.setItem(KEY, toB64(raw)); } catch(e){}
+            await reveal(raw);
+          } catch(e) {
+            msg.textContent = 'Something went wrong unlocking. Please try again.';
+          } finally { btn.disabled = false; }
+        });
+      })();
+      </script>
 
-      <p><b>Modeling &amp; Simulation</b></p>
-      <ul>
-        <li>What's kind of special about ODE45 or RK45? What does that do that something like an RK4 or an Euler method doesn’t do?</li>
-        <li>Say you’re simulating a circular orbit with a propagator – specifically, a plain basic Euler method (instead of something more advanced). What would happen to the shape of the orbit as you keep simulating it over time? (hint: spirals outwards)</li>
-        <li>How would you architect a 6 degree of freedom simulation for a geostationary satellite?</li>
-        <li>Can you describe at a super high level what Monte Carlo means and what Monte Carlo simulations are used for?</li>
-        <li>Given a satellite's position and a ground station's location, what is the approach for determining whether the station falls within the satellite's visibility region (its access 'sphere'/footprint) or not? What's the algorithm?</li>
-      </ul>
-
-      <p><b>Software Engineering (Mostly C++, but also some Python)</b></p>
-      <ul>
-        <li>Do you know what polymorphism in C++ is? References? Pointers? Instantiation?</li>
-        <li>If you suspected a memory leak could be the root cause of the issue, do you have any intuition about how to further check for that?</li>
-        <li>When would you start prioritizing a language like C++ versus a higher-level language like Python? What are the trade-offs between C++ and Python?</li>
-        <li>Why use C++ over something like MATLAB for Modeling &amp; Simulation?</li>
-      </ul>
-
-      <p><b>Misc Questions (e.g. behavioral, fit, logistics, etc.)</b></p>
-      <ul>
-        <li>Tell me about yourself?</li>
-        <li>Why do you want to work for [Company Name]?</li>
-        <li>Why are you interested in this team / role specifically?</li>
-        <li>Can you talk about a project that you owned end-to-end, pointing out your contributions, specifically?</li>
-        <li>If you had to do the same project in 1/10th of the time, what would you do differently?</li>
-      </ul>
 
       <p>The above questions – as mentioned before – aren’t fully comprehensive, but are some of the most common for Spacecraft GNC type roles out of what I remember being asked.</p>
 
